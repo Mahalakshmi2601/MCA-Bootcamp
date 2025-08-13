@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title >Shopping Website</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .search-bar {
+      width: 100%;
+      max-width: 300px;
+    }
+    .nav1 ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .nav2 ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .nav1{
+        width: 60%;
+    }
+    .nav2{
+        width: 40%;
+    }
+    .fullnav{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .heading {
+        background-color: aqua;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .mobile{
+         padding: 40px 20px;
+         background-color: white;
+    }
+    .container .product{
+        height: 200px;
+        width: 250px;
+        border-radius: 10px;
+        display: flex;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+    .product img{
+        width: 50%;
+        text-align: center;
+        
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+    <input type="text" placeholder="Search products..." />
+  </div>
+        <div class="fullnav">
+        <nav class="nav1">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+                <li>LEARN MORE</li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li>LOGIN</li>
+                <li>CART</li>
+            </ul>
+        </nav>
+        </div>
+        <div class="heading">
+            <h1>welcome to samsung</h1>
+        </div>
+    </header>
+    <main>
+        <div class="mobile">
+        <div class="container">
+            <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/t/v/-original-imahavdv28z4nrkn.jpeg?q=70" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>₹14,999</p>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/n/l/v/-original-imahcd9jggredwvf.jpeg?q=70" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>₹49,999</p>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/s/5/o/-original-imah5h427t2uhpfx.jpeg?q=70" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>₹999</p>
+        </div>
+        <div class="product">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/n/k/m/-original-imahejynppp5smdv.jpeg?q=70" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>₹2,999</p>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
