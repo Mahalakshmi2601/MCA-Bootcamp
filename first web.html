@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flipkart</title>
+<style>
+  body {
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+  }
+  header {
+    background-color: #2874f0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Search bar styling */
+  .search-bar input {
+    width: 700PX;
+    outline: none;
+    font-size: 16px;
+  }
+  nav {
+    background-color:white;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #0f1f64;
+    padding: 6px 12px;
+    
+  }
+  nav a:hover {
+    background-color: #8a9fe3;
+  }
+  /* Products grid */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+  }
+  .product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    padding: 12px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    box-shadow: 0 0 15px #2874f0;
+  }
+  .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product-name {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 6px;
+    min-height: 44px;
+  }
+  .product-price {
+    color: #388e3c;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .buy-btn {
+    background-color: #fb641b;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .buy-btn:hover {
+    background-color: #e55300;
+  }
+  @media(max-width: 600px){
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    header {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    .search-bar {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  
+  <div class="search-bar">
+    <input type="text" placeholder="Search products..." />
+  </div>
+</header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Electronics</a>
+  <a href="#">Fashion</a>
+  <a href="#">Mobiles</a>
+  <a href="#">Appliances</a>
+  <a href="#">Offers</a>
+</nav>
+
+<div class="container">
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/312/312/k1xmqvk0/mobile/8/t/8/redmi-note-12-pro-5g-22011211in-original-imafnz8f27qhyynz.jpeg?q=70" alt="Redmi Note 12 Pro" />
+      <div class="product-name">Redmi Note 12 Pro 5G</div>
+      <div class="product-price">₹18,999</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/312/312/l3fh8y80/headphone/2/v/x/boatl-770-original-imaga87bhxhxqbhv.jpeg?q=70" alt="boAt Headphones" />
+      <div class="product-name">boAt BassHeads 770</div>
+      <div class="product-price">₹1,299</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/312/312/k70d18w0/shoe/w/1/3/8-1102b-m-kracker-original-imafp2hz4npfdh9w.jpeg?q=70" alt="Sports Shoes" />
+      <div class="product-name">Men's Sports Shoes</div>
+      <div class="product-price">₹1,499</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/312/312/kjf0n0w0/shirt/w/x/f/m-fss22fifdm-nk-2-flying-machine-original-imafyyz8npn9ttcd.jpeg?q=70" alt="Casual Shirt" />
+      <div class="product-name">Men's Casual Shirt</div>
+      <div class="product-price">₹899</div>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
